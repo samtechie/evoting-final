@@ -17,7 +17,7 @@
                 <h3>{{ $candidate->name }}</h3>
                </div>
 		  	<div class="thumbnail">
-              <img src="holder.js/300x200" alt="...">
+              <img src="{{$candidate->avatar->url('medium')}}"    alt="...">
               	
             </div>
 		  	

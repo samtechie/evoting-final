@@ -28,6 +28,10 @@
 	    {{$errors->first('manifesto')}}
 
 	</div>
+	<div class="form-group">
+		{{Form::label('avatar','Upload Image')}}
+		{{ Form::file('avatar',Input::old('avatar'),array('class' => 'form-control'))}}
+	</div>
 
 	
 

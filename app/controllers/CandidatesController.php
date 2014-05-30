@@ -49,6 +49,8 @@ class CandidatesController extends \BaseController {
 			$candidate = new Candidate;
 			$candidate->name = Input::get('name');
 			$candidate->manifesto = Input::get('manifesto');
+			$candidate->avatar = Input::file('avatar');  
+
 			$candidate->save();
 
 			// redirect

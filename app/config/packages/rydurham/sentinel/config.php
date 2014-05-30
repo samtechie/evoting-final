@@ -44,7 +44,7 @@ return array(
 	| 
 	*/
 
-	'post_login' 	=> 'candidates.index',
+	'post_login' 	=> 'votes',
 
 	'post_logout' 	=> 'home',
 

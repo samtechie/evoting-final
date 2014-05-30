@@ -18,3 +18,4 @@ Route::get('/', array('as' => 'home', function()
 }));
 
 Route::resource('candidates', 'CandidatesController');
+Route::get('votes', array('as' => 'votes', 'uses' => 'VoteController@index'));

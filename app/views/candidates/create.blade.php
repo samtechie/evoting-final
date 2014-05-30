@@ -14,7 +14,7 @@
 <!-- if there are creation errors, they will show here -->
 <!--{{ HTML::ul($errors->all()) }} -->
 
-{{ Form::open(array('url' => 'candidates')) }}
+{{ Form::open(array('url' => 'candidates','files' => true)) }}
 
 	<div class="form-group">
 		{{ Form::label('name', 'Name') }}
@@ -27,6 +27,10 @@
 		{{ Form::text('manifesto', Input::old('manifesto'), array('class' => 'form-control')) }}
 	    {{$errors->first('manifesto')}}
 
+	</div>
+	<div class="form-group">
+		{{Form::label('avatar','Upload Image')}}
+		{{ Form::file('avatar')}}
 	</div>
 
 	

@@ -53,6 +53,8 @@
 					<li {{ (Request::is('users*') ? 'class="active"' : '') }}><a href="{{ URL::to('/users') }}">Users</a></li>
 					<li {{ (Request::is('groups*') ? 'class="active"' : '') }}><a href="{{ URL::to('/groups') }}">Groups</a></li>
 					<li {{ (Request::is('candidates/create*') ? 'class="active"' : '') }}><a href="{{ URL::action('CandidatesController@create') }}">Add Candidate</a></li>
+					<li {{ (Request::is('candidates*') ? 'class="active"' : '') }}><a href="{{ URL::action('CandidatesController@index') }}">View Candidates</a></li>
+
 
 				@endif
 	          </ul>
